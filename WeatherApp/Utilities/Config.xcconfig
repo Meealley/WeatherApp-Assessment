@@ -1,9 +1,3 @@
-//
-//  Config.xcconfig
-//  WeatherApp
-//
-//  Created by Oyewale Favour on 05/11/2025.
-//
+API_KEY = b26fb8d0bedd5182bb47d23c944fc7b8
 
-// Configuration settings file format documentation can be found at:
-// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+

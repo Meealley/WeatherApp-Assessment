@@ -13,10 +13,19 @@ struct Constants {
         static let baseURL = "https://api.openweathermap.org/data/2.5"
         static let weatherEndpoint = "/weather"
         
-        static let apiKey = "b26fb8d0bedd5182bb47d23c944fc7b8"
         
+        static var apiKey: String {
+            
+            guard let key = Bundle.main.infoDictionary?["API_KEY"] as? String else {
+                fatalError("API_KEY not found in Info.plist")
+            }
+            
+            return key
+            
+        }
         static let units = "metric"
     }
+    
     
     struct StorageKeys {
         static let favoriteCityKey = "favoriteCityKey"
